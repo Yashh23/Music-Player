@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(54, 54, 54);
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(100, 100, 100);
+}
+.App {
+  transition: all 0.5s ease;
+}
+.app {
+  height: 100vh;
+  transition: all 0.5s ease;
+}
+
+.library-active {
+  margin-left: 30%;
+}
+
+p,
+svg {
+  transition: color 0.5s ease;
+}
+
+.animate-track {
+  transition: all 0.5s ease;
+}
+
+.dark {
+  background-color: rgb(24, 25, 26);
+  h1 {
+    color: white;
+  }
+  h2 {
+    color: #fff;
+  }
+  h3,
+  h4 {
+    color: #b3b3b3;
+  }
+
+  p,
+  svg {
+    color: white;
+  }
+
+  .library-song {
+    background-color: rgb(36, 37, 38);
+    &:hover {
+      background-color: rgb(58, 59, 60);
+      border: 1px solid #bdbdbd;
+    }
+  }
+  .selected {
+    background-color: rgb(33, 33, 33);
+    border: 1px solid #bdbdbd;
+  }
+  .library {
+    background-color: rgb(36, 37, 38);
+    box-shadow: none;
+  }
+}
+@import "./Song";
+@import "./Player";
+@import "./Library";
+@import "./Nav";

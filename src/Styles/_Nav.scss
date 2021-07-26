@@ -1,0 +1,42 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgb(65, 65, 65);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    &:hover {
+      background: rgb(65, 65, 65);
+      color: white;
+    }
+  }
+}
+.mode {
+  color: rgb(65, 65, 65);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-right: 3px;
+  filter: drop-shadow(0 -2mm 3.5mm rgb(255, 255, 255));
+}
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}
+.btn-dark {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #bdbdbd;
+  &:hover {
+    background: rgb(40, 40, 40);
+    border-color: white;
+    outline: none;
+  }
+}
